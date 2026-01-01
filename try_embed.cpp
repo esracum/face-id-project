@@ -54,7 +54,7 @@ int main() {
         cv::Scalar current_color = cv::Scalar(255, 255, 0); // Varsayılan Sarı
         int frame_counter = 0;
 
-        std::cout << "Sistem Baslatildi. ESC ile cikin." << std::endl;
+        std::cout << "Sistem Baslatildi." << std::endl;
 
         while (cap.read(frame)) {
             frame_counter++;
@@ -103,7 +103,7 @@ int main() {
                 
                 // Karar ve Görsel Güncelleme
                 if (current_score > 0.40f) { // Threshold: 0.40 - 0.50 arası test et
-                    current_label = "ESCOCAN";
+                    current_label = "TANIMLANDI";
                     current_color = cv::Scalar(0, 255, 0); // Yeşil
                 } else {
                     current_label = "BILINMEYEN";
