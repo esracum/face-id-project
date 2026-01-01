@@ -32,7 +32,7 @@ Uygulamayı derlemek için terminali açın ve aşağıdaki komutları sırasıy
 
 ```bash
 # Proje dizinine gidin
-cd ~/Desktop/face_samples 
+cd ~/Desktop/face-id-project
 
 # Eğer daha önceden derleme yaptıysanız temizleyin ve yeni build klasörü oluşturun
 rm -rf build && mkdir build && cd build
