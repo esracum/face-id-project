@@ -29,12 +29,12 @@ int main() {
     try {
         /* ===== 1. KURULUMLAR ===== */
         cv::CascadeClassifier face_detector;
-        if (!face_detector.load("/home/esocan/Desktop/face_samples/haarcascade_frontalcatface.xml")) {
+        if (!face_detector.load("haarcascade_frontalcatface.xml")) {
             throw std::runtime_error("Haarcascade dosyasi bulunamadi!");
         }
 
         Ort::Env env(ORT_LOGGING_LEVEL_WARNING, "FaceID");
-        const char* model_path = "/home/esocan/Desktop/face_samples/w600k_r50.onnx"; // İndirdiğin ArcFace modeli
+        const char* model_path = "w600k_r50.onnx"; // indirdiğimiz ArcFace modeli
         Ort::Session session(env, model_path, Ort::SessionOptions{});
         Ort::AllocatorWithDefaultOptions allocator;
 
@@ -46,7 +46,7 @@ int main() {
         cv::VideoCapture cap(0);
         if (!cap.isOpened()) throw std::runtime_error("Kamera acilamadi!");
 
-        /* ===== 2. DEĞİŞKENLER (Akıcılık İçin) ===== */
+        /* ===== 2. DEĞİŞKENLER ===== */
         cv::Mat frame;
         std::vector<cv::Rect> last_faces;
         std::string current_label = "Taratiliyor...";
@@ -59,7 +59,7 @@ int main() {
         while (cap.read(frame)) {
             frame_counter++;
 
-            /* 3. OPTİMİZASYON: Yüz Tespitini 3 karede bir yap */
+            /* 3. OPTİMİZASYON */
             if (frame_counter % 3 == 0) {
                 cv::Mat gray, small_gray;
                 cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY);
@@ -118,7 +118,7 @@ int main() {
                 cv::putText(frame, info, {rect.x, rect.y - 10}, cv::FONT_HERSHEY_SIMPLEX, 0.7, current_color, 2);
             }
 
-            cv::imshow("Fluid FaceID System", frame);
+            cv::imshow("FaceID System", frame);
             if (cv::waitKey(1) == 27) break;
         }
     } catch (const std::exception& e) {
