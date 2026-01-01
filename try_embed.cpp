@@ -111,7 +111,7 @@ int main() {
                 }
             }
 
-            /* 5. GÖRSELLEŞTİRME (Her karede kesintisiz çizilir) */
+            /* 5. GÖRSELLEŞTİRME */
             for (const auto& rect : last_faces) {
                 cv::rectangle(frame, rect, current_color, 2);
                 std::string info = current_label + " " + std::to_string(current_score).substr(0,4);
