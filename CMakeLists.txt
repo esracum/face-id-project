@@ -31,7 +31,7 @@ target_link_libraries(faceid
     onnxruntime
 )
 
-# ---------- Runtime library path (Linux icin COK ONEMLI) ----------
+# ---------- Runtime library path ----------
 set_target_properties(faceid PROPERTIES
     BUILD_RPATH "${ONNXRUNTIME_DIR}/lib"
 )
