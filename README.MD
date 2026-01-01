@@ -18,7 +18,7 @@ Bu proje, videolardan veri seti hazırlama, Google Colab üzerinde öznitelik (e
 
 ### 1. Modelin Temini
 Sistemin çalışması için `w600k_r50.onnx` model dosyasını aşağıdaki bağlantıdan indirip proje ana dizinine yerleştirin:
-[InsightFace ONNX Model Linki](https://github.com/onnx/models/tree/main/vision/body_analysis/arcface)
+[InsightFace ONNX Model Linki](https://huggingface.co/public-data/insightface/blob/main/models/buffalo_l/w600k_r50.onnx)
 
 ### 2. Veri Seti ve Embedding Hazırlığı
 1.  `extract_video.py` dosyasını çalıştırarak videolarınızdan yüzleri ayıklayın. Embeddinge uygun hale getirin.
