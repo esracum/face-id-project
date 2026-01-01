@@ -2,7 +2,7 @@
 
 Bu proje, videolardan veri seti hazırlama, Google Colab üzerinde öznitelik (embedding) çıkarma ve elde edilen verileri hem **Python** hem de **C++** ortamlarında koşturma sürecini kapsar.
 
-## 🛠️ Sistem Bileşenleri ve Dosyalar
+## Sistem Bileşenleri ve Dosyalar
 
 | Dosya Adı | Açıklama |
 | :--- | :--- |
@@ -44,7 +44,7 @@ make -j$(nproc)
 # Uygulamayı çalıştırın
 ./faceid
 
-## ⚠️ Dikkat Edilmesi Gerekenler
+## !!! Dikkat Edilmesi Gerekenler !!!
 ### Python Kullanıcıları: ref_embedding.npy dosyasının script ile aynı dizinde olduğundan emin olun.
 ### insightface kütüphanesi 3.10 üzeri python sürümünde hata verebilir.
 ### C++ Kullanıcıları: my_face.h dosyasını projeye dahil ettikten sonra make komutunu tekrar çalıştırmayı unutmayın.
