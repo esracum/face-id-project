@@ -4,11 +4,11 @@ Bu proje, videolardan veri seti hazırlama, Google Colab üzerinde öznitelik (e
 
 ## Proje Tanıtım ve Uygulama Videosu
 
-Aşağıdaki görsele tıklayarak projenin detaylı anlatımını ve demo gösterimini YouTube üzerinden izleyebilirsiniz:
+<a href="https://www.youtube.com/watch?v=TEdI27JIcQc" target="_blank">
+ <img src="https://img.youtube.com/vi/TEdI27JIcQc/maxresdefault.jpg" alt="Yüz Tanıma Sistemi Video" width="800" border="10" />
+</a>
 
-[![Gerçek Zamanlı FaceID: Python'dan Optimize C++'a](https://img.youtube.com/vi/TEdI27JIcQc/0.jpg)](https://www.youtube.com/watch?v=TEdI27JIcQc)
-
-> [Videonun doğrudan linki için buraya tıklayın.](https://www.youtube.com/watch?v=TEdI27JIcQc)
+> **Not:** Videoyu izlemek için yukarıdaki görsele tıklayabilirsiniz.
 
 ## Sistem Bileşenleri ve Dosyalar
 
