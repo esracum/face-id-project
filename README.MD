@@ -2,6 +2,14 @@
 
 Bu proje, videolardan veri seti hazırlama, Google Colab üzerinde öznitelik (embedding) çıkarma ve elde edilen verileri hem **Python** hem de **C++** ortamlarında koşturma sürecini kapsar.
 
+## Proje Tanıtım ve Uygulama Videosu
+
+Aşağıdaki görsele tıklayarak projenin detaylı anlatımını ve demo gösterimini YouTube üzerinden izleyebilirsiniz:
+
+[![Gerçek Zamanlı FaceID: Python'dan Optimize C++'a](https://img.youtube.com/vi/TEdI27JIcQc/0.jpg)](https://www.youtube.com/watch?v=TEdI27JIcQc)
+
+> [Videonun doğrudan linki için buraya tıklayın.](https://www.youtube.com/watch?v=TEdI27JIcQc)
+
 ## Sistem Bileşenleri ve Dosyalar
 
 | Dosya Adı | Açıklama |
